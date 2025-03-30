@@ -9,10 +9,10 @@ import lombok.ToString;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-@MappedSuperclass
+@MappedSuperclass // Indicate this class act as super class for entities
 @Getter
 @Setter
-@ToString
+@ToString // Used to convert object to string format
 public class BaseEntity {
     @Column(updatable = false)
     private LocalDate createdAt;

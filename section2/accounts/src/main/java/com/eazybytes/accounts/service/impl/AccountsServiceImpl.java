@@ -22,6 +22,8 @@ import java.util.Random;
 @Service
 @AllArgsConstructor
 public class AccountsServiceImpl implements IAccountsService {
+    // In the case of single constructor, we don't need to manually autowire
+    // Spring framework will automatically do the auto wire because there are a single constructor
     private AccountsRepository accountsRepository;
     private CustomerRepository customerRepository;
 
@@ -69,5 +71,15 @@ public class AccountsServiceImpl implements IAccountsService {
         newAccount.setCreatedAt(LocalDate.now());
         newAccount.setCreatedBy("Anonymous");
         return newAccount;
+    }
+
+    @Override
+    public boolean deleteAccount(String mobileNumber) {
+        Customer customer = customerRepository.findByMobileNumber(mobileNumber).orElseThrow(
+                () -> new ResourceNotFoundException("Customer", "mobileNumber", mobileNumber)
+        );
+        accountsRepository.deleteByCustomerId(customer.getCustomerId());
+        customerRepository.deleteById(customer.getCustomerId());
+        return true;
     }
 }

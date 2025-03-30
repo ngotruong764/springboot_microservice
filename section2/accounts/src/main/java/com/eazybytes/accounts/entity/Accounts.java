@@ -8,7 +8,7 @@ import lombok.*;
 @Entity
 @Getter
 @Setter
-@ToString
+@ToString // Used to convert object to string format
 @AllArgsConstructor
 @NoArgsConstructor
 public class Accounts extends  BaseEntity {
