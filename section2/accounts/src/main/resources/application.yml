@@ -17,3 +17,10 @@ spring:
     hibernate:
       ddl-auto: update #
     show-sql: true # Print all sql query
+
+# Spring doc property
+springdoc:
+  api-docs:
+    path: /api-docs
+
+
