@@ -5,12 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6d236bc-cbe8-4d0d-949c-5f319df0131c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/org/example/loans/constants/LoansConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/org/example/loans/controller/LoansController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/org/example/loans/dto/ErrorResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/org/example/loans/dto/LoansDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/org/example/loans/dto/ResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/org/example/loans/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/org/example/loans/entity/Loans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/org/example/loans/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/org/example/loans/exception/LoanAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/org/example/loans/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/org/example/loans/mapper/LoansMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/org/example/loans/repository/LoansRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/org/example/loans/service/ILoansService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/org/example/loans/service/impl/LoansServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/controller/AccountsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/AccountsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/AccountsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/CustomerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/ErrorResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/ErrorResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/dto/ResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -34,39 +51,52 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2uzlVxurwQxzyViftPTNgkS6rQt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AccountsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/truongngo/Documents/Java Documentation/Udemy/springboot_microservice/section2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.archetype.catalogs&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AccountsApplication.executor": "Run",
+    "Spring Boot.LoansApplication.executor": "Run",
+    "jdk.selected.JAVA_MODULE": "19",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/truongngo/Documents/Java Documentation/Udemy/springboot_microservice/section2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.LoansApplication">
     <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.accounts.AccountsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoansApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="loans" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.loans.LoansApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -83,7 +113,8 @@
       <workItem from="1743259311773" duration="64000" />
       <workItem from="1743259514022" duration="337000" />
       <workItem from="1743259881157" duration="27943000" />
-      <workItem from="1743686453694" duration="3712000" />
+      <workItem from="1743686453694" duration="10286000" />
+      <workItem from="1743842163527" duration="624000" />
     </task>
     <servers />
   </component>
