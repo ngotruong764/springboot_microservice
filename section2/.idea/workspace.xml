@@ -5,25 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6d236bc-cbe8-4d0d-949c-5f319df0131c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/org/example/cards/audit/AuditAwareImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/org/example/cards/constants/CardsConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/org/example/cards/controller/CardsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/org/example/cards/dto/CardsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/org/example/cards/dto/ErrorResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/org/example/cards/dto/ResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/org/example/cards/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/org/example/cards/entity/Cards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/org/example/cards/exception/CardAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/org/example/cards/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/org/example/cards/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/org/example/cards/mapper/CardsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/org/example/cards/repository/CardsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/org/example/cards/service/ICardsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/org/example/cards/service/impl/CardsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +116,7 @@
       <workItem from="1743259514022" duration="337000" />
       <workItem from="1743259881157" duration="27943000" />
       <workItem from="1743686453694" duration="10286000" />
-      <workItem from="1743842163527" duration="2417000" />
+      <workItem from="1743842163527" duration="6872000" />
     </task>
     <servers />
   </component>
