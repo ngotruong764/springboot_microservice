@@ -1,0 +1,42 @@
+server:
+    port: 8082
+
+spring:
+  config:
+    activate:
+      on-profile: qa
+  application:
+    name: account
+  datasource:
+    url: jdbc:h2:mem:testdb # Endpoint details which the application can connect to internal H2 database
+    driver-class-name: org.h2.Driver
+    username: sa # default name
+    password: '' # default password
+  h2:
+    console:
+      enabled: true # Enable H2 console --> Able to see table, column, row,.... in the browser.
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update #
+    show-sql: true # Print all sql query
+
+
+# Spring doc property
+springdoc:
+  api-docs:
+    path: /api-docs
+
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to EazyBank accounts related QA APIs "
+  contactDetails:
+    name: "Smitha Ray - QA Lead"
+    email: "smitha@eazybank.com"
+  onCallSupport:
+    - (666) 265-3765
+    - (666) 734-8371
+
+
