@@ -1,0 +1,13 @@
+server:
+  port: 8071
+
+spring:
+  application:
+    name: configserver
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:/Users/truongngo/Documents/Java Documentation/Udemy/springboot_microservice/section6/config
