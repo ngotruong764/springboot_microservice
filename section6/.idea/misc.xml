@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/v1-springboot/cards/pom.xml" />
+        <option value="$PROJECT_DIR$/v1-springboot/loans/pom.xml" />
+        <option value="$PROJECT_DIR$/v1-springboot/accounts/pom.xml" />
+        <option value="$PROJECT_DIR$/v2-spring-cloud-config/cards/pom.xml" />
+        <option value="$PROJECT_DIR$/v2-spring-cloud-config/loans/pom.xml" />
+        <option value="$PROJECT_DIR$/v2-spring-cloud-config/accounts/pom.xml" />
+        <option value="$PROJECT_DIR$/v2-spring-cloud-config/configserver/pom.xml" />
+        <option value="$PROJECT_DIR$/v3-spring-cloud-config-local-file/cards/pom.xml" />
+        <option value="$PROJECT_DIR$/v3-spring-cloud-config-local-file/loans/pom.xml" />
+        <option value="$PROJECT_DIR$/v3-spring-cloud-config-local-file/accounts/pom.xml" />
+        <option value="$PROJECT_DIR$/v3-spring-cloud-config-local-file/configserver/pom.xml" />
+        <option value="$PROJECT_DIR$/v4-spring-cloud-config-github-repo/cards/pom.xml" />
+        <option value="$PROJECT_DIR$/v4-spring-cloud-config-github-repo/loans/pom.xml" />
+        <option value="$PROJECT_DIR$/v4-spring-cloud-config-github-repo/accounts/pom.xml" />
+        <option value="$PROJECT_DIR$/v4-spring-cloud-config-github-repo/configserver/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

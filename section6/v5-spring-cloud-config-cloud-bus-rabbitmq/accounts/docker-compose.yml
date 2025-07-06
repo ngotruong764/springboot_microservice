@@ -1,0 +1,46 @@
+services:
+  accounts:
+    image: "ngotruong764/accounts:s4"
+    container_name: accounts-ms
+    ports:
+      # Inside ports, we can define multiple post mapping
+      # The - indicate an element of the array
+      - "8082:8082"
+    deploy:
+      resources:
+        limits:
+          # Provide maximum 700MB memory
+          memory: 700m
+    networks:
+      - ngotruong764-network
+
+  loans:
+    image: "ngotruong764/loans:s4"
+    container_name: loans-ms
+    ports:
+      - "8083:8083"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - ngotruong764-network
+
+  cards:
+    image: "ngotruong764/cards:s4"
+    container_name: cards-ms
+    ports:
+      - "8084:8084"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - ngotruong764-network
+
+# Create a network with the name ngotruong764-network
+# This network will be used to connect all the microservices
+networks:
+  ngotruong764-network:
+    driver: "bridge"
+

@@ -16,5 +16,14 @@ spring:
           timeout: 5
           clone-on-start: true
           force-pull: true
+
+# If we need to encrypt the config repo
 encrypt:
   key: JDIUEIO302NCFHU702NFB831OQWUJDIUEIO302NCFHU702NFB831OQWU
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
