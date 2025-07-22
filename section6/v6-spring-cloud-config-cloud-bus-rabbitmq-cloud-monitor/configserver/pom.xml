@@ -50,6 +50,12 @@
 			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
 			<version>4.3.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-monitor</artifactId>
+			<version>4.3.0</version>
+			<scope>runtime</scope>
+		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
@@ -65,17 +71,6 @@
 
 	<build>
 		<plugins>
-			<!-- Jib from Google-->
-			<plugin>
-				<groupId>com.google.cloud.tools</groupId>
-				<artifactId>jib-maven-plugin</artifactId>
-				<version>3.4.5</version>
-				<configuration>
-					<to>
-						<image>ngotruong764/${project.artifactId}:s6</image>
-					</to>
-				</configuration>
-			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
