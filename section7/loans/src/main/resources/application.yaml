@@ -1,0 +1,27 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: loans
+  profiles:
+    active: prod
+  # H2 Database
+  datasource:
+    url: jdbc:mysql://localhost:3309/loansdb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root # default name
+    password: root # default password
+  jpa:
+    show-sql: true # Print all sql query
+  sql:
+    init:
+      mode: always
+  config:
+    import: optional:configserver:http://localhost:8071/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

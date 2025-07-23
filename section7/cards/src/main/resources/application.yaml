@@ -1,0 +1,25 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: cards
+  profiles:
+    active: prod
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3308/cardsdb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root # default name
+    password: root # default password
+  jpa:
+    show-sql: true # Print all sql query
+  sql:
+    init:
+      mode: always
+  config:
+    import: optional:configserver:http://localhost:8071/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
