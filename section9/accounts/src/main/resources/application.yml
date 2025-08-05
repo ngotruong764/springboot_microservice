@@ -1,0 +1,75 @@
+server:
+  port: 8082
+
+spring:
+  config:
+    import: optional:configserver:http://localhost:8071/
+  application:
+    name: accounts
+  profiles:
+    active: prod
+  datasource:
+    url: jdbc:h2:mem:testdb # Endpoint details which the application can connect to internal H2 database
+    driver-class-name: org.h2.Driver
+    username: sa # default name
+    password: '' # default password
+  h2:
+    console:
+      enabled: true # Enable H2 console --> Able to see table, column, row,.... in the browser.
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update #
+    show-sql: true # Print all sql query
+
+# Spring doc property
+springdoc:
+  api-docs:
+    path: /api-docs
+
+# Enable actuator
+management:
+  info:
+    env:
+      enabled: true
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      probes:
+        enabled: true
+
+endpoints:
+  shutdown:
+    enabled: true
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka
+
+info:
+  app:
+    name: accounts
+    description: Accounts Microservice
+    version: 1.0.0
+
+logging:
+  level:
+    com:
+      eazybytes:
+        accounts: DEBUG
