@@ -1,0 +1,70 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: loans
+  profiles:
+    active: prod
+  # H2 Database
+  datasource:
+    url: jdbc:h2:mem:testdb # Endpoint details which the application can connect to internal H2 database
+    driver-class-name: org.h2.Driver
+    username: sa # default name
+    password: '' # default password
+  h2:
+    console:
+      enabled: true # Enable H2 console --> Able to see table, column, row,.... in the browser.
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update #
+    show-sql: true # Print all sql query
+  config:
+    import: optional:configserver:http://localhost:8071/
+
+management:
+  info:
+    env:
+      enabled: true
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    shutdown:
+      access: unrestricted
+    health:
+      probes:
+        enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka
+
+info:
+  app:
+    name: loans
+    description: Loans Microservice
+    version: 1.0.0
+
+logging:
+  level:
+    org:
+      example:
+        loans: DEBUG
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
