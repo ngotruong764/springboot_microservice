@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: configserver-deployment
+  labels:
+    app: configserver
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: configserver
+  template:
+    metadata:
+      labels:
+        app: configserver
+    spec:
+      containers:
+        - name: configserver
+          image: ngotruong764/configserver:s12
+          ports:
+            - containerPort: 8071
+# 3 hyphens in Yaml file: treated these single Yaml file 
+# as a 2 seperated Yaml files.
+---
+apiVersion: v1
+kind: Service
+metadata:
+  # Act as host name inside K8s cluster.
+  # Microservices inside K8s cluster are goin to communicate
+  #  with each other using this name.
+  name: configserver
+spec:
+  selector:
+    app: configserver
+  # Whenever we mention LoadBalencer, it indicates we want to
+  #   expose our microservice to the outside world (to the outside of K8s cluster as well).
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      # Port that is exposed to the outside world
+      port: 8071
+      # Port that is started internally inside the K8s network
+      targetPort: 8071
