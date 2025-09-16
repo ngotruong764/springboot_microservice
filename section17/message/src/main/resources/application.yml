@@ -1,0 +1,27 @@
+server:
+  port: 9010
+
+spring:
+  cloud:
+    function:
+      definition: email|sms
+    stream:
+      kafka:
+        binder:
+          brokers:
+            - localhost:9092
+      bindings:
+        # This is an input binding
+        emailsms-in-0:
+          # Whenever we use input binding,
+          # destination is considered as a queue
+          destination: send-communication
+          group: ${spring.application.name}
+        emailsms-out-0:
+          destination: communication-sent
+
+
+
+  application:
+    name: message
+
